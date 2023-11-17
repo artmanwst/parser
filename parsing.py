@@ -9,7 +9,6 @@ with open(csv_file_path, mode='w', encoding='utf-8', newline='') as csv_file:
     fieldnames = ['ID товара', 'Наименование', 'Ссылка на товар', 'Регулярная цена', 'Промо цена', 'Бренд']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     
-    # Записываем заголовки в файл
     writer.writeheader()
 
     for i in range(1, 14):
